@@ -147,7 +147,7 @@
 			color: #9b9b9b;
 		}
 		table.button {
-			margin: 50px;
+			margin: 0px;
 		}
 		table.button table td {
 			border: 0px solid #470b2f;
@@ -211,7 +211,8 @@
 			padding-left: 50px !important;
 		}
 		.text-proposal {
-			margin-top: 35px;
+			margin-top: 25px;
+			padding: 0px 25px;
 			text-align: center;
 			font-family: Roboto;
 			font-size: 14px;
@@ -235,6 +236,7 @@
 		}
 		.text-conclusion {
 			margin-top: 25px;
+			margin-bottom: 50px;
 			font-family: Roboto;
 			font-size: 16px;
 			font-weight: normal;
@@ -263,6 +265,50 @@
 			line-height: 1.75;
 			letter-spacing: -0.5px;
 			color: #505050;
+		}
+		.shadow {
+			padding-top: 25px;
+			padding-bottom: 25px;
+			border: solid 1px #e0e0e0;
+		}
+		hr {
+			opacity: 0.25;
+		}
+		.text-cancelation-policy {
+			margin-top: 25px;
+			font-family: Roboto;
+			font-size: 16px;
+			font-weight: normal;
+			font-style: normal;
+			font-stretch: normal;
+			line-height: normal;
+			letter-spacing: normal;
+			text-align: center;
+			color: #470b2f;
+		}
+		.text-conclusion-addition {
+			margin-top: 0px;
+			margin-bottom: 20px;
+		}
+		.text-content-addition{
+			color: #1b1b1b;
+		}
+		th.columns {
+			padding-bottom: 0px;
+		}
+		.text-conclusion-addition-extra {
+			margin-bottom: 20px;
+		}
+		.text-title-subtitle {
+			font-family: AbrilFatface;
+			font-size: 20px;
+			font-weight: normal;
+			font-style: normal;
+			font-stretch: normal;
+			line-height: 1.4;
+			letter-spacing: 2px;
+			color: #1b1b1b;
+			text-align: center;
 		}
 		@media only screen and (max-width: 596px) {
 			table.body img {
@@ -317,10 +363,20 @@
 													</tr>
 												</table>
 												<p class="text-title">Hi Antonia!</p>
-												<p class="text-confirm text-confirm-one">We have great news for you!</p>
-												<p class="text-confirm">You received a booking request from myProfashional.com.</p>
+												<p class="text-confirm text-confirm-one">Thank you for having accepted this booking request.</p>
+												<p class="text-confirm">
+													You're officially booked now!  A confirmation of this booking has been sent to  Firstname Shopper.
+												</p>
+												<p class="text-content text-content-addition">
+													Well organized is the new black. ;-)
+												</p>
+												<p class="text-conclusion text-conclusion-addition">
+													Add date and start time of your booking to your personal calendar to make sure you
+													don't miss your upcoming shopping trip (imagine..!).
+												</p>
+												
 												<p class="text-hint">Booking details:</p>
-												<center data-parsed="">
+												<center data-parsed="" class="shadow">
 													<table class="row">
 														<tr>
 															<th class="small-12 large-8 first columns info-booking-details">
@@ -353,64 +409,70 @@
 															<th class="expander"></th>
 														</tr>
 													</table>
+													<hr/>
 													<p class="text-proposal">
 														I am from NYC and love Shopping in European cities like Zurich. Looking for
 														a local to show me fashion hot-spots.
 													</p>
 												</center>
-												<p class="text-content">
-													The status of this booking request is pending. You have 24h to accept or decline the request.
-													If you don't take any action in due time, this booking request automatically expires and the
-													Shopper will be notified about your unavailability. Don't lose this opportunity and reply
-													as soon as possible!
+												
+												<p class="text-content text-content-addition">
+													Important note:
 												</p>
-												<p class="text-conclusion">
-													Very briefly, before you click... did you double check your avalaibility?
-													You did? Fantastic!
+												<p class="text-conclusion text-conclusion-addition">
+													Please ask the Shopper for the start code at the beginning of your trip as well as for
+													the termination code at the end of the trip. FIRSTNAME SHOPPER will find these codes in
+													the confirmation email received. If you don&apos;t use the trip tracker, we won&apos;t
+													be able to calculate and transfer your earnings to your bank account.
 												</p>
+												<p class="text-conclusion text-conclusion-addition-extra">
+													Access the trip tracker here to start your shopping trip.
+												</p>
+												
 												<center data-parsed="">
-													<table class="row">
+													<table class="button large button-verify">
 														<tr>
-															<th class="small-12 large-6 first columns">
-																<table class="button button-accept">
+															<td>
+																<table>
 																	<tr>
 																		<td>
-																			<table>
-																				<tr>
-																					<td>
-																						<center data-parsed="">
-																							<a href="#">Accept</a>
-																						</center>
-																					</td>
-																				</tr>
-																			</table>
+																			<center data-parsed="">
+																				<a href="#">Access Trip Tracker</a>
+																			</center>
 																		</td>
 																	</tr>
 																</table>
-															</th>
-															<th class="small-12 large-6 last columns">
-																<table class="button button-accept">
-																	<tr>
-																		<td>
-																			<table>
-																				<tr>
-																					<td>
-																						<center data-parsed="">
-																							<a href="#">Decline</a>
-																						</center>
-																					</td>
-																				</tr>
-																			</table>
-																		</td>
-																	</tr>
-																</table>
-															</th>
-															<th class="expander"></th>
+															</td>
 														</tr>
 													</table>
 												</center>
 												
-												<p class="text-hint-addition">Do you have any questions or ideas for us? Please don&apos;t hesitate. <a href="#">Contact us!</a></p>
+												<p class="text-content text-content-addition">
+													Anything else?
+												</p>
+												<p class="text-conclusion text-conclusion-addition">
+													Yep! We shared your number Phone number PF with Firstname Shopper. Be prepared
+													to receive a message and let Firstname Shopper know that you&apos;re excited and
+													prepared for your shopping trip.
+												</p>
+												<p class="text-conclusion text-conclusion-addition-extra">
+													Last but not least, always remember:
+												</p>
+												<p class="text-title-subtitle">WE LEAVE SHOPPERS HAPPY AND WELL-DRESSED.</p>
+												<p class="text-conclusion text-conclusion-addition-extra">
+													Have a succesful shopping trip together with Firstname shopper!
+												</p>
+												
+												<p class="text-hint text-hint-addition">
+													Do you have any questions or ideas for us? Please don&apos;t hesitate.
+													<a href="#">Contact us!</a>
+												</p>
+												<p class="text-hint text-hint-addition">
+													In case any unexpected urgencies force you to change plans, please click here
+													<br/>
+													to
+													<a href="#">cancel your booking</a>
+												</p>
 												<p class="text-hint-addition">Your myProfashional Team</p>
 												<p class="text-direct">FOLLOW US:</p>
 												<center data-parsed="">
@@ -429,6 +491,7 @@
 														     class="float-center logo logo-facebook"/>
 													</a>
 												</center>
+												<p class="text-cancelation-policy">Cancellation Policy</p>
 												<p class="text-copyright">© 2018 myProfashional</p>
 												<table class="callout">
 													<tr>
