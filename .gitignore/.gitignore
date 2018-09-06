@@ -1,0 +1,14 @@
+__MACOSX/
+.idea/
+package-lock.json
+templates/basic.html
+templates/drip.html
+templates/hero.html
+templates/marketing.html
+templates/newsletter.html
+templates/newsletter-2.html
+templates/order.html
+templates/password.html
+templates/sidebar.html
+templates/sidebar-hero.html
+templates/welcome.html
